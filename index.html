@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <script>
+        function f() {
+
+            var a = document.getElementById("a").value;
+            a = parseFloat(a);
+            var b = document.getElementById("b").value;
+            b = parseFloat(b);
+            var c;
+            c = a + b;
+            document.getElementById("wynik").innerHTML = c;
+        }
+
+    </script>
+
+    <style>
+        h3 {
+            background-color: #f69670;
+
+        }
+
+        h1 {
+            background-color: #f69670;
+
+        }
+    </style>
+
+</head>
+
+<body text="#800000" bgcolor=#FFA07A>
+
+    <center>
+
+        <h1>Na tej stronie będzie prosty kalkulator</br></h1>
+
+        <h3>Podaj a</h3>
+        <input type="text" id="a" value="0">
+        </br>
+
+        <h3>Podaj b</h3>
+        <input type="text" id="b" value="0">
+        <br>
+        <div id="wynik">
+            <h3>Tu będzie wynik</h3>
+        </div>
+        <br>
+        <button onclick="f()">Wykonaj działanie</button>
+    </center>
+</body>
+
+</html>
